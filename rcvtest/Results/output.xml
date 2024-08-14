@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0.1 (Python 3.12.5 on win32)" generated="2024-08-14T18:56:10.519975" rpa="false" schemaversion="5">
+<suite id="s1" name="BasicTest" source="C:\Users\xghus\OneDrive\Desktop\My File\Study\IT\Python\rcvtest\Tests\CRUD\BasicTest.robot">
+<test id="s1-t1" name="[Test_case_01] Verify search User successfully" line="9">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-08-14T18:56:10.842537" level="INFO">Opening browser 'chrome' to base url 'http://localhost/crud-without-refresh-reload/'.</msg>
+<arg>${URL}</arg>
+<arg>${Browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-08-14T18:56:10.841521" elapsed="3.967824"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-08-14T18:56:14.813329" elapsed="0.216378"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-08-14T18:56:15.032705" level="INFO">Typing text 'Jack' into text field '//*[@id="example_filter"]/label/input'.</msg>
+<arg>//*[@id="example_filter"]/label/input</arg>
+<arg>Jack</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-08-14T18:56:15.030707" elapsed="0.497525"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2024-08-14T18:56:15.662184" level="INFO">Current page contains text 'Jack'.</msg>
+<arg>Jack</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2024-08-14T18:56:15.541663" elapsed="0.121522"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-08-14T18:56:15.672710" elapsed="2.986035"/>
+</kw>
+<doc>Test search User</doc>
+<tag>Function</tag>
+<status status="PASS" start="2024-08-14T18:56:10.840527" elapsed="7.819108"/>
+</test>
+<test id="s1-t2" name="[Test_case_02] Verify that add User successfully" line="25">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-08-14T18:56:18.664626" level="INFO">Opening browser 'chrome' to base url 'http://localhost/crud-without-refresh-reload/'.</msg>
+<arg>${URL}</arg>
+<arg>${Browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-08-14T18:56:18.663611" elapsed="3.177704"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-08-14T18:56:21.842314" elapsed="0.095406"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-08-14T18:56:21.939721" level="INFO">Clicking element 'xpath:/html/body/div[1]/div/div/div[1]/div/a'.</msg>
+<arg>xpath:/html/body/div[1]/div/div/div[1]/div/a</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-08-14T18:56:21.937720" elapsed="0.373184"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-08-14T18:56:25.334884" level="INFO">Slept 3 seconds.</msg>
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-08-14T18:56:22.333636" elapsed="3.002264"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-08-14T18:56:25.349898" level="INFO">Typing text 'Doraemon' into text field 'xpath://*[@id="addUserField"]'.</msg>
+<arg>xpath://*[@id="addUserField"]</arg>
+<arg>Doraemon</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-08-14T18:56:25.345896" elapsed="0.242481"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-08-14T18:56:25.592367" level="INFO">Typing text 'Doraemon@gmail.com' into text field 'xpath://*[@id="addEmailField"]'.</msg>
+<arg>xpath://*[@id="addEmailField"]</arg>
+<arg>Doraemon@gmail.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-08-14T18:56:25.591373" elapsed="0.307850"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-08-14T18:56:25.901215" level="INFO">Typing text '0888888888' into text field 'xpath://*[@id="addMobileField"]'.</msg>
+<arg>xpath://*[@id="addMobileField"]</arg>
+<arg>0888888888</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-08-14T18:56:25.900216" elapsed="0.274138"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-08-14T18:56:26.176347" level="INFO">Typing text 'Ha Noi' into text field 'xpath://*[@id="addCityField"]'.</msg>
+<arg>xpath://*[@id="addCityField"]</arg>
+<arg>Ha Noi</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-08-14T18:56:26.175346" elapsed="0.274597"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-08-14T18:56:26.451945" level="INFO">Clicking element 'xpath://*[@id="addUser"]/div[5]/button[2]'.</msg>
+<arg>xpath://*[@id="addUser"]/div[5]/button[2]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-08-14T18:56:26.450941" elapsed="0.178689"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-08-14T18:56:28.640985" level="INFO">Slept 2 seconds.</msg>
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-08-14T18:56:26.640620" elapsed="2.000365"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2024-08-14T18:56:28.660236" level="INFO">Current page contains text 'Doraemon'.</msg>
+<arg>Doraemon</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2024-08-14T18:56:28.642002" elapsed="0.018234"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-08-14T18:56:28.661244" elapsed="2.754211"/>
+</kw>
+<doc>Test add User</doc>
+<tag>Function</tag>
+<status status="PASS" start="2024-08-14T18:56:18.663100" elapsed="12.753359"/>
+</test>
+<test id="s1-t3" name="[Test_case_03] Verify that edit User by ID successfully" line="49">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-08-14T18:56:31.420793" level="INFO">Opening browser 'chrome' to base url 'http://localhost/crud-without-refresh-reload/'.</msg>
+<arg>${URL}</arg>
+<arg>${Browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-08-14T18:56:31.420793" elapsed="3.323707"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-08-14T18:56:34.748827" elapsed="0.119068"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-08-14T18:56:34.869417" level="INFO">Clicking element 'xpath://*[@id="28"]/td[6]/a[1]'.</msg>
+<arg>xpath://*[@id="28"]/td[6]/a[1]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-08-14T18:56:34.869417" elapsed="0.597008"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-08-14T18:56:38.473776" level="INFO">Slept 3 seconds.</msg>
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-08-14T18:56:35.470918" elapsed="3.002858"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-08-14T18:56:38.473776" level="INFO">Typing text 'Edward' into text field 'xpath://*[@id="nameField"]'.</msg>
+<arg>xpath://*[@id="nameField"]</arg>
+<arg>Edward</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-08-14T18:56:38.473776" elapsed="0.189974"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-08-14T18:56:38.665751" level="INFO">Typing text 'Edward@gmail.com' into text field 'xpath://*[@id="emailField"]'.</msg>
+<arg>xpath://*[@id="emailField"]</arg>
+<arg>Edward@gmail.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-08-14T18:56:38.664752" elapsed="0.341052"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-08-14T18:56:39.007802" level="INFO">Typing text '0999999' into text field 'xpath://*[@id="mobileField"]'.</msg>
+<arg>xpath://*[@id="mobileField"]</arg>
+<arg>0999999</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-08-14T18:56:39.007802" elapsed="0.275646"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-08-14T18:56:39.287462" level="INFO">Typing text 'TPHCM' into text field 'xpath://*[@id="cityField"]'.</msg>
+<arg>xpath://*[@id="cityField"]</arg>
+<arg>TPHCM</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-08-14T18:56:39.285452" elapsed="0.351130"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-08-14T18:56:39.637921" level="INFO">Clicking element 'xpath://*[@id="updateUser"]/div[5]/button[2]'.</msg>
+<arg>xpath://*[@id="updateUser"]/div[5]/button[2]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-08-14T18:56:39.637921" elapsed="0.171444"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-08-14T18:56:41.810917" level="INFO">Slept 2 seconds.</msg>
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-08-14T18:56:39.810369" elapsed="2.001058"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2024-08-14T18:56:41.841150" level="INFO">Current page contains text 'Edward'.</msg>
+<arg>Edward</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2024-08-14T18:56:41.811427" elapsed="0.030726"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-08-14T18:56:41.842153" elapsed="2.867397"/>
+</kw>
+<doc>Test edit User</doc>
+<tag>Function</tag>
+<status status="PASS" start="2024-08-14T18:56:31.419455" elapsed="13.291068"/>
+</test>
+<test id="s1-t4" name="[Test_case_04] Verify that delete User successfully" line="73">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-08-14T18:56:44.712677" level="INFO">Opening browser 'chrome' to base url 'http://localhost/crud-without-refresh-reload/'.</msg>
+<arg>${URL}</arg>
+<arg>${Browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-08-14T18:56:44.712677" elapsed="3.308972"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-08-14T18:56:48.028383" elapsed="0.170932"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-08-14T18:56:48.205833" level="INFO">Clicking element 'xpath://*[@id="21"]/td[6]/a[2]'.</msg>
+<arg>xpath://*[@id="21"]/td[6]/a[2]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-08-14T18:56:48.204734" elapsed="0.427957"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-08-14T18:56:51.635573" level="INFO">Slept 3 seconds.</msg>
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-08-14T18:56:48.633687" elapsed="3.002398"/>
+</kw>
+<kw name="Handle Alert" owner="SeleniumLibrary">
+<msg time="2024-08-14T18:56:51.637108" level="INFO">HANDLE::&lt;class 'NoneType'&gt;::None</msg>
+<arg>accept</arg>
+<doc>Handles the current alert and returns its message.</doc>
+<status status="PASS" start="2024-08-14T18:56:51.637108" elapsed="0.006455"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-08-14T18:56:53.656685" level="INFO">Slept 2 seconds.</msg>
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-08-14T18:56:51.656287" elapsed="2.000398"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-08-14T18:56:53.658786" level="INFO">Typing text 'Noah' into text field '//*[@id="example_filter"]/label/input'.</msg>
+<arg>//*[@id="example_filter"]/label/input</arg>
+<arg>Noah</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-08-14T18:56:53.657708" elapsed="0.196774"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-08-14T18:56:55.855892" level="INFO">Slept 2 seconds.</msg>
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-08-14T18:56:53.855667" elapsed="2.000225"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2024-08-14T18:56:55.884416" level="INFO">Current page contains text 'No data available in table'.</msg>
+<arg>No data available in table</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2024-08-14T18:56:55.855892" elapsed="0.029519"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-08-14T18:56:55.886392" elapsed="3.078783"/>
+</kw>
+<doc>Test delete User with ID</doc>
+<tag>Function</tag>
+<status status="PASS" start="2024-08-14T18:56:44.711540" elapsed="14.255641"/>
+</test>
+<status status="PASS" start="2024-08-14T18:56:10.524484" elapsed="48.443687"/>
+</suite>
+<statistics>
+<total>
+<stat pass="4" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="4" fail="0" skip="0">Function</stat>
+</tag>
+<suite>
+<stat pass="4" fail="0" skip="0" id="s1" name="BasicTest">BasicTest</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
